@@ -2,30 +2,65 @@
 <html lang="en" data-theme="cupcake">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geometry Genius</title>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
-  <header>
-    <!-- navigation part -->
-    <div class="navbar bg-base-100 shadow-2xl lg:px-12 bg-blue-100 mt-2">
-      <div class="flex-1">
-        <p class="text-3xl"><strong>Interactive</strong><br>Geometry Genius</p>
-      </div>
+    <header>
+        <!-- navigation part -->
+        <div class="navbar bg-base-100 shadow-2xl lg:px-12 bg-blue-100 mt-2">
+            <div class="flex-1">
+                <p class="text-3xl"><strong>Interactive</strong><br>Geometry Genius</p>
+            </div>
 
-      <div class="flex-none gap-2">
-        <div class="navbar-end">
-          <button class="bg-blue-600 px-6 py-2 rounded-lg text-white">Blog</button>
+            <div class="flex-none gap-2">
+                <div class="navbar-end">
+                    <button class="bg-blue-600 px-6 py-2 rounded-lg text-white">Blog</button>
+                </div>
+            </div>
+
         </div>
-      </div>
-
-    </div>
-    </div>
+        </div>
 
 
-  </header>
+    </header>
+    <main>
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row mt-5">
+            <div class="cart-details w-full md:w-[60%] lg:w-[60%] grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- first card -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl hover:bg-pink-300 ">
+                    <figure><img class="w-40 h-30 mt-5" src="images/triangle.png"></figure>
+                    <div class="card-body">
+
+                        <h2 class="card-title mx-auto" id="triangle-card"> Triangle</h2>
+                        <p class="text-center">Area (A) =0.5&#215b&#215h</p>
+                        <div class="flex space-x-4">
+                            <div class="w-1/2 flex gap-2">
+                                <input type="text" class="w-full border p-2 input-xs" id="triangle-first-input"
+                                    placeholder="b">
+                                <label for="measurement">cm</label>
+                            </div>
+                            <div class="w-1/2 flex gap-2">
+                                <input type="text" class="w-full border p-2 input-xs" id="triangle-second-input"
+                                    placeholder="h">
+                                <label for="measurement">cm</label>
+                            </div>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="bg-blue-600 w-[196px] py-2 px-2 rounded text-white font-semibold text-xl "
+                                id="triangle-button">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </section>
+
+    </main>
+</body>
+
+</html>
