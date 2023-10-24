@@ -1,3 +1,10 @@
+// blog button
+const blogButton =document.getElementById('blog-btn');
+blogButton.addEventListener('click',function(){
+    window.location.href = "blog.html"
+})
+
+
 let serial=0;
 // first-card
 document.getElementById("triangle-button").addEventListener('click',function(){
